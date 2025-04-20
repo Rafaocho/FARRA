@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    height: 20vh;
+    min-width: 100vw;
+    background-color: rgb(227, 157, 255);
+    /* background-color: rgb(46, 46, 252); */
+    font-family: "Poetsen One", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 5px solid black;
+}
+
+.btn-pink {
+    background-color: #f894c3;
+    color: white;
+    border: none;
+}
+.btn-pink:hover {
+    background-color: #e6519b;
+    color: white;
+}
+
+header>h2{
+    font-size: 40px;
+    margin-left: 90px;
+    color: rgb(50, 50, 211);
+}
+section{
+    display: flex;
+    min-height: 80vh;
+    min-width: 100vw;
+    background-color: rgb(156, 156, 156);
+}
+
+main{
+    min-height: 60vh;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: top center;
+    justify-content: top center;
+    padding: 5%;
+    font-family: "Poetsen One", sans-serif;
+}
+
+main>h1{
+    font-size: xx-large;
+    
+}
+
+ul {
+    padding-left: 15px;
+}
+table{
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+footer{
+    height: 10vh;
+    min-width: 100vw;
+    border-top: 5px solid black;
+    background-color: white;
+}
+
+fieldset{
+    width: 80%;
+}
+
+.tablador{
+    display: flex;
+    justify-content: center;
+    width: 60vw;
+}
+
+.usuario{
+    display: flex;
+    align-items: center;
+}
+
+.usuario > a , .usuario > form > button{
+    margin-right: 10px;
+    margin-left: 10px;
+}
