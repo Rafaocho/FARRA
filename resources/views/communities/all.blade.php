@@ -1,54 +1,42 @@
 @extends('master')
 
 @section('header', 'Comunidades')
-
+@section('sub_header')
+<div class="hero-section text-black text-center d-flex align-items-center" style=" background-size: cover; background-position: center; height: 250px;">
+<div class="container">
+        <h2 class="display-4 fw-bold">Descubre los mejores eventos</h2>
+        <p class="lead">Eventos únicos, experiencias inolvidables. ¡Únete ahora!</p>
+    </div>
+</div>
+@endsection
 @section('content')
-
-<div class="container mt-4">
+<div class="container">
     <div class="card shadow-lg p-4">
         <h2 class="text-center mb-4">¡Estas son las comunidades disponibles!</h2>
-        <form action="{{ route('communities.buscar') }}" method="GET" class="input-group mb-3">
-            @csrf
-            <!-- <select name="criterio" class="form-select input-group-text">
-                <option value="name">Nombre</option>
-            </select> -->
-        
-            <input type="text" name="dato" class="form-control text-center" placeholder="Encuentra tu comunidad">
-            
-            <button type="submit" class="btn btn-dark">Buscar</button>
-        </form>
-        <table class="table table-striped table-hover text-center">
-            <thead class="table-dark">
-                <tr>
-                    <th>Nombre</th>
-                    <!-- <th colspan="2">Opciones</th> -->
-                </tr>
-            </thead>
-            <tbody>
-                @foreach ($communitiesList as $community)
-                    <tr>
-                    <td><a href="{{ route('communities.provinces', $community->id) }}">{{ $community->name }}</a></td>
-                        <!-- <td>
-                            <a class="btn btn-warning btn-sm" href="{{ route('communities.edit', $community->id) }}">Editar</a>
-                        </td>
-                        <td>
-                            <form action="{{ route('communities.destroy', $community->id) }}" method="POST">
-                                @csrf
-                                @method("DELETE")
-                                <button class="btn btn-danger btn-sm" type="submit">Eliminar</button>
-                            </ --><!-- form> -->
-                        </td>
-                    </tr>
-                @endforeach
-            </tbody>
-        </table>
-        <div class="d-flex justify-content-center align-items-center mt-2">
-             <div>
-                {{ $communitiesList->links() }}
-            </div> 
-            
+        <div class="row mb-3">
+  <div class="col-md-8 offset-md-2">
+    <form action="{{ route('communities.search') }}" method="GET" class="input-group">
+    @csrf  
+    <input type="text" name="data" class="form-control" placeholder="Encuentra tu comunidad">
+      <button type="submit" class="btn btn-dark">Buscar</button>
+    </form>
+  </div>
+</div>
+</div>
+<div class="row row-cols-1 row-cols-md-4 g-4 mt-3">
+    @foreach ($communitiesList as $community)
+        <div class="col">
+            <div class="card h-100 text-center shadow-sm">
+                <div class="card-body d-flex align-items-center justify-content-center">
+                    <a href="{{ route('communities.provinces', $community->id) }}" class="stretched-link text-decoration-none fw-bold">
+                        <img  src="{{ asset($community->image) }}"class="img-fluid ">
+                        {{ $community->name }}
+                    </a>
+                </div>
+            </div>
         </div>
-    </div>
+    @endforeach
+</div>
 </div>
 
 @endsection

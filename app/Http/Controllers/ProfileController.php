@@ -57,4 +57,22 @@ class ProfileController extends Controller
 
         return Redirect::to('/');
     }
+    public function follow($id)
+    {
+        $user = auth()->user();
+
+        if ($user->id == $id || $user->following()->where('followed_id', $id)->exists()) {
+            return back();
+        }
+
+        $user->following()->attach($id);
+        return back();
+    }
+
+    public function unfollow($id)
+    {
+        $user = auth()->user();
+        $user->following()->detach($id);
+        return back();
+    }
 }

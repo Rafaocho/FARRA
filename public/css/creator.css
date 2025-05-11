@@ -1,0 +1,115 @@
+:root {
+    --primary: #147ca5;
+    --secondary: #FFB6C1;
+    --accent: #7C4DFF;
+    --background: #FFFFFF;
+    --border: #E0E0E0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    height: 7vh;
+    min-width: 100vw;
+    /* background-color: #fae0f6; */
+    background-color: var(--primary);
+    color: white;
+    /* background-color: rgb(46, 46, 252); */
+    font-family: "Poetsen One", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-pink {
+    background-color: #f894c3;
+    color: white;
+    border: none;
+}
+.btn-pink:hover {
+    background-color: #e6519b;
+    color: white;
+}
+button.primary {
+    background-color: var(--primary) !important;
+    color: white !important;
+}
+button.secondary {
+    background-color: var(--secondary) ;
+    color: var(--primary);
+}
+button:hover {
+    background-color: var(--accent);
+}
+section{
+    display: flex;
+    min-height: 80vh;
+    color: var(--text);
+    min-width: 100vw;
+    background-color: var(--background)
+}
+
+main{
+    min-height: 60vh;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: top center;
+    justify-content: top center;
+    padding: 2%;
+    font-family: "Poetsen One", sans-serif;
+}
+
+main>h1{
+    font-size: xx-large;
+    
+}
+
+ul {
+    padding-left: 15px;
+}
+table{
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+footer{
+    height: 10vh;
+    min-width: 100vw;
+    border-top: 5px solid black;
+    background-color: white;
+}
+
+fieldset{
+    width: 80%;
+}
+
+.tablador{
+    display: flex;
+    justify-content: center;
+    width: 60vw;
+}
+
+.usuario{
+    display: flex;
+    align-items: center;
+}
+
+.usuario > a , .usuario > form > button{
+    margin-right: 10px;
+    margin-left: 10px;
+}

@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string('title',100);
             $table->string('description', 1000);
             $table->date('date');
+            $table->integer('minAge')->nullable();
+            $table->enum('type', ['party', 'religious', 'cultural', 'gastronomic']);
             $table->unsignedBigInteger('town_id');
             $table->foreign('town_id')->references('id')->on('towns')->onDelete('cascade');
             $table->unsignedBigInteger('creator_id');

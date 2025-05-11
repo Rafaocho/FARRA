@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Town;
+use App\Models\Province;
+use App\Models\Event;
 use Illuminate\Http\Request;
 
 class TownsController extends Controller
@@ -13,9 +15,13 @@ class TownsController extends Controller
         $townsList = Town::all();
         return view('towns.all', ['townsList' => $townsList]);
     }
-    public function create()
+
+    public function create(Request $r)
     {
-        return view('towns.form');
+        $town = new Town();
+        $provincesList = Province::all(); 
+        $provinceId = $r->query('province_id');
+        return view('towns.form', compact('town', 'provincesList', 'provinceId'));
     }
     public function store(Request $r)
     {
@@ -25,12 +31,14 @@ class TownsController extends Controller
         $p->longitude = $r->longitude;
         $p->province_id = $r->province_id;
         $p->save();
-        return redirect()->route('towns.index');
+        return redirect()->route('towns.events', ['id' => $p->id]);
+    
     }
     public function edit($id)
     {
-        $town = Town::find($id);
-        return view('towns.form', ['town' => $town]);
+        $town = Town::findOrFail($id);
+        $provincesList = Province::all(); 
+        return view('towns.form', compact('town', 'provincesList'));
     }
     public function update($id, Request $r)
     {

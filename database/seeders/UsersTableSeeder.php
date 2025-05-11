@@ -29,7 +29,13 @@ class UsersTableSeeder extends Seeder
                 'email' => 'user@gmail.com',
                 'password' => Hash::make('password'),
                 'role' => 'user',
-            ]
+            ],
+            [
+                'name' =>  'prueba',
+                'email' => 'test@gmail.com',
+                'password' => Hash::make('test'),
+                'role' => 'user',
+            ],
         ]);
     }
 }

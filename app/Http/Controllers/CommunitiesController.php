@@ -10,7 +10,7 @@ class CommunitiesController extends Controller
 {
     public function index()
     {
-        $communitiesList = Community::paginate(10);
+        $communitiesList = Community::all();
         return view('communities.all', ['communitiesList' => $communitiesList]);
     }
     public function create()
@@ -42,16 +42,15 @@ class CommunitiesController extends Controller
         $p->delete();
         return redirect()->route('communities.index');
     }
-    public function buscar(Request $r)
+    public function search(Request $r)
     {
-        $dato = $r->input('dato');
-        $criterio = $r->input('criterio');
-        $communities = Community::where($criterio, 'like', $dato)->get();
+        $data = trim($r->input('data'));
+        $communities = Community::where('name', 'like', '%' . $data . '%')->get();
         return view('communities.filter', ['communities' => $communities]);
     }
     public function showProvinces($id)
     {
-        $community = Community::with('provinces')->findOrFail($id); // Asegúrate de tener la relación 'provinces'
+        $community = Community::with('provinces')->findOrFail($id);
 
         return view('provinces.all', [
             'community' => $community,

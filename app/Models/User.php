@@ -67,4 +67,12 @@ class User extends Authenticatable
     public function followed(){
         return $this->belongsToMany(User::class, 'follows', 'followed_id', 'follower_id');
     }
+    public function isCreator()
+    {
+        return $this->role === 'creator';
+    }
+    public function isAdmin()
+    {
+        return $this->role === 'user';
+    }
 }

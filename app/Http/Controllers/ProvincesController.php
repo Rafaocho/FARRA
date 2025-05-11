@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Province;
+use App\Models\Event;
 use Illuminate\Http\Request;
 
 class ProvincesController extends Controller
@@ -44,21 +45,22 @@ class ProvincesController extends Controller
         $p->delete();
         return redirect()->route('provinces.index');
     }
-    public function buscar(Request $r)
+    public function search(Request $r)
     {
-        $dato = $r->input('dato');
-        $criterio = $r->input('criterio');
-        $provinces = Province::where($criterio, 'like', $dato)->get();
+        $data = trim($r->input('data'));
+        $provinces = Province::where('name', 'like', '%' . $data . '%')->get();
         return view('provinces.filter', ['provinces' => $provinces]);
     }
     public function showTowns($id)
     {
         $province = Province::with(['towns', 'community'])->findOrFail($id);
-
+        $townIds = $province->towns->pluck('id');
+        $events = Event::whereIn('town_id', $townIds)->get();
         return view('towns.all', [
             'province' => $province,
             'townsList' => $province->towns,
-            'community' => $province->community
+            'community' => $province->community,
+            'events' => $events
         ]);
     }
 }

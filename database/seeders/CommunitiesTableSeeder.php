@@ -14,55 +14,72 @@ class CommunitiesTableSeeder extends Seeder
     public function run(): void
     {
         DB::table('communities')->insert([
-            'name' => 'Andalucia'
+            'name' => 'Andalucia',
+            'image' => 'images/community/andalucia.jpg'
         ]);
         DB::table('communities')->insert([
-            'name' => 'Aragón'
+            'name' => 'Aragón',
+            'image' => 'images/community/aragon.jpg'
         ]);
         DB::table('communities')->insert([
-            'name' => 'Canarias'
+            'name' => 'Canarias',
+            'image' => 'images/community/canarias.jpg'
         ]);
         DB::table('communities')->insert([
-            'name' => 'Cantabria'
+            'name' => 'Cantabria',
+            'image' => 'images/community/cantabria.jpg'
         ]);
         DB::table('communities')->insert([
-            'name' => 'Castilla-La Mancha'
+            'name' => 'Castilla-La Mancha',
+            'image' => 'images/community/castillalamancha.jpg'
         ]);
         DB::table('communities')->insert([
-            'name' => 'Castilla y León'
+            'name' => 'Castilla y León',
+            'image' => 'images/community/castillaleon.jpg'
         ]);
         DB::table('communities')->insert([
-            'name' => 'Cataluña'
+            'name' => 'Cataluña',
+            'image' => 'images/community/cataluña.jpg'
         ]);
         DB::table('communities')->insert([
-            'name' => 'Madrid'
+            'name' => 'Madrid',
+            'image' => 'images/community/madrid.jpg'
         ]);
         DB::table('communities')->insert([
-            'name' => 'Navarra'
+            'name' => 'Navarra',
+            'image' => 'images/community/navarra.jpg'
         ]);
         DB::table('communities')->insert([
-            'name' => 'Comunidad Valenciana'
+            'name' => 'Comunidad Valenciana',
+            'image' => 'images/community/valencia.jpg'
         ]);
         DB::table('communities')->insert([
-            'name' => 'Extremadura'
+            'name' => 'Extremadura',
+            'image' => 'images/community/extremadura.jpg'
         ]);
         DB::table('communities')->insert([
-            'name' => 'Galicia'
+            'name' => 'Galicia',
+            'image' => 'images/community/galicia.jpg'
         ]);
         DB::table('communities')->insert([
-            'name' => 'Baleares'
+            'name' => 'Baleares',
+            'image' => 'images/community/baleares.jpg'
         ]);
         DB::table('communities')->insert([
-            'name' => 'La Rioja'
+            'name' => 'La Rioja',
+            'image' => 'images/community/larioja.jpg'
         ]);
         DB::table('communities')->insert([
-            'name' => 'País Vasco'
+            'name' => 'País Vasco',
+            'image' => 'images/community/paisvasco.jpg'
         ]);
         DB::table('communities')->insert([
-            'name' => 'Asturias'
+            'name' => 'Asturias',
+            'image' => 'images/community/asturias.jpg'
         ]);
         DB::table('communities')->insert([
-            'name' => 'Murcia'
+            'name' => 'Murcia',
+            'image' => 'images/community/murcia.jpg'
         ]);
     }
 }
