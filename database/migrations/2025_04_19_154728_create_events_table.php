@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('title',100);
             $table->string('description', 1000);
             $table->date('date');
+            $table->decimal('price', 8, 2)->default(0);
             $table->integer('minAge')->nullable();
             $table->enum('type', ['party', 'religious', 'cultural', 'gastronomic']);
             $table->unsignedBigInteger('town_id');

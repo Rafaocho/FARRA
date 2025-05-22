@@ -8,9 +8,19 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\View\View;
+use App\Models\User;
 
 class ProfileController extends Controller
 {
+    public function show(User $user): View
+    {
+        $followersCount = $user->followed()->count();
+        $followingCount = $user->following()->count();
+        $isFollowing = auth()->user()->following()->where('followed_id', $user->id)->exists();
+        $favoriteTowns = $user->favoriteTowns;
+
+        return view('profile.show', compact('user', 'followersCount', 'followingCount', 'isFollowing', 'favoriteTowns'));
+    }
     /**
      * Display the user's profile form.
      */

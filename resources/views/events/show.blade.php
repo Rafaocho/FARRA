@@ -44,10 +44,57 @@
                         <button type="submit" class="btn btn-danger">Cancelar asistencia</button>
                     </form>
                 @else
-                    <form action="{{ route('event.join', $event->id) }}" method="POST">
-                        @csrf
-                        <button type="submit" class="btn btn-success">Apuntarse al evento</button>
-                    </form>
+                    @if ($event->price > 0)
+                        <!-- Botón que abre el modal -->
+                        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#payModal">
+                            Apuntarse al evento (€{{ $event->price }})
+                        </button>
+
+                        <!-- Modal de pago -->
+                        <div class="modal fade" id="payModal" tabindex="-1" aria-labelledby="payModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-primary text-white">
+                                        <h5 class="modal-title" id="payModalLabel">Terminal de pago</h5>
+                                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                            aria-label="Cerrar"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="{{ route('event.join', $event->id) }}" method="POST">
+                                            @csrf
+                                            <div class="mb-3">
+                                                <label class="form-label">Número de tarjeta</label>
+                                                <input type="text" class="form-control" placeholder="1234 5678 9012 3456" required>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6 mb-3">
+                                                    <label class="form-label">Expiración</label>
+                                                    <input type="text" class="form-control" placeholder="MM/AA" required>
+                                                </div>
+                                                <div class="col-6 mb-3">
+                                                    <label class="form-label">CVC</label>
+                                                    <input type="text" class="form-control" placeholder="123" required>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label">Titular</label>
+                                                <input type="text" class="form-control" placeholder="Juan Pérez" required>
+                                            </div>
+                                            <div class="text-end">
+                                                <button type="submit" class="btn btn-success">Pagar €{{ $event->price }}</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @else
+                        <!-- Evento gratuito -->
+                        <form action="{{ route('event.join', $event->id) }}" method="POST">
+                            @csrf
+                            <button type="submit" class="btn btn-success">Apuntarse al evento</button>
+                        </form>
+                    @endif
                 @endif
             </div>
         @endauth

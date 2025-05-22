@@ -11,6 +11,7 @@ class CommunitiesController extends Controller
     public function index()
     {
         $communitiesList = Community::all();
+        
         return view('communities.all', ['communitiesList' => $communitiesList]);
     }
     public function create()

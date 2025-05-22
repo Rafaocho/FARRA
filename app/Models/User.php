@@ -37,8 +37,8 @@ class User extends Authenticatable
         'remember_token',
     ];
 
-     // Asistencias a eventos
-     
+    // Asistencias a eventos
+
 
     /**
      * Get the attributes that should be cast.
@@ -52,19 +52,24 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
-    public function reviews(){
+    public function reviews()
+    {
         return $this->hasMany(Review::class);
     }
-    public function creator(){
+    public function creator()
+    {
         return $this->hasMany(Event::class);
     }
-    public function events(){
+    public function events()
+    {
         return $this->belongsToMany(Event::class, 'attendances', 'user_id', 'event_id');
     }
-    public function following(){
+    public function following()
+    {
         return $this->belongsToMany(User::class, 'follows', 'follower_id', 'followed_id');
     }
-    public function followed(){
+    public function followed()
+    {
         return $this->belongsToMany(User::class, 'follows', 'followed_id', 'follower_id');
     }
     public function isCreator()
@@ -74,5 +79,9 @@ class User extends Authenticatable
     public function isAdmin()
     {
         return $this->role === 'user';
+    }
+    public function favoriteTowns()
+    {
+        return $this->belongsToMany(Town::class, 'favorite_towns')->withTimestamps();
     }
 }

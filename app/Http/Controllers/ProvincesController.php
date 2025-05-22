@@ -55,12 +55,22 @@ class ProvincesController extends Controller
     {
         $province = Province::with(['towns', 'community'])->findOrFail($id);
         $townIds = $province->towns->pluck('id');
-        $events = Event::whereIn('town_id', $townIds)->get();
+        $eventsRaw = Event::whereIn('town_id', $townIds)->with('town')->get();
+
+        // Mapear los eventos para agregar nombre del pueblo y la fecha en formato ISO
+        $events = $eventsRaw->map(function ($event) {
+            return [
+                'title' => $event->title,
+                'date' => $event->date,
+                'town' => $event->town ? $event->town->name : 'Desconocido',
+            ];
+        });
+
         return view('towns.all', [
             'province' => $province,
             'townsList' => $province->towns,
             'community' => $province->community,
-            'events' => $events
+            'eventsJson' => $events,
         ]);
     }
 }

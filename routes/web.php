@@ -18,6 +18,14 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get('lang/{locale}', function ($locale) {
+    if (!in_array($locale, ['en', 'es'])) {
+        abort(400);
+    }
+    session(['locale' => $locale]);
+    return redirect()->back();
+})->name('lang.switch');
+
 Route::resource('communities', 'CommunitiesController')->except(['show']);
 Route::get('/communitySearch', [CommunitiesController::class, 'search'])->name('communities.search');
 Route::resource('provinces', 'ProvincesController');
@@ -34,6 +42,9 @@ Route::post('/events/{event}/join', [EventsController::class, 'join'])->name('ev
 Route::post('/events/{event}/leave', [EventsController::class, 'leave'])->name('event.leave');
 Route::post('/users/{id}/follow', [ProfileController::class, 'follow'])->name('users.follow');
 Route::post('/users/{id}/unfollow', [ProfileController::class, 'unfollow'])->name('users.unfollow');
+Route::post('/towns/{town}/favorite', [\App\Http\Controllers\TownsController::class, 'toggleFavorite'])->name('towns.toggleFavorite');
+Route::get('/profile/{user}', [ProfileController::class, 'show'])->name('profile.show');
+
 
 Route::middleware(['auth', 'role:creator,user'])->group(function () {
 Route::post('/eventos/{id}/join', [App\Http\Controllers\EventsController::class, 'join'])->name('event.join');

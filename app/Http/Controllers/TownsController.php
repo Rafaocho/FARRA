@@ -19,7 +19,7 @@ class TownsController extends Controller
     public function create(Request $r)
     {
         $town = new Town();
-        $provincesList = Province::all(); 
+        $provincesList = Province::all();
         $provinceId = $r->query('province_id');
         return view('towns.form', compact('town', 'provincesList', 'provinceId'));
     }
@@ -32,12 +32,12 @@ class TownsController extends Controller
         $p->province_id = $r->province_id;
         $p->save();
         return redirect()->route('towns.events', ['id' => $p->id]);
-    
+
     }
     public function edit($id)
     {
         $town = Town::findOrFail($id);
-        $provincesList = Province::all(); 
+        $provincesList = Province::all();
         return view('towns.form', compact('town', 'provincesList'));
     }
     public function update($id, Request $r)
@@ -72,5 +72,18 @@ class TownsController extends Controller
             'eventsList' => $town->events,
             'province' => $town->province
         ]);
+    }
+    public function toggleFavorite(Town $town)
+    {
+        $user = auth()->user();
+        if (!$user)
+            return redirect()->back();
+
+        if ($user->favoriteTowns->contains($town->id)) {
+            $user->favoriteTowns()->detach($town->id);
+        } else {
+            $user->favoriteTowns()->attach($town->id);
+        }
+        return redirect()->back();
     }
 }
