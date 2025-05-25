@@ -1,17 +1,5 @@
 @extends('master')
 
-@section('header', 'Pago')
-
-@section('sub_header')
-    <div class="hero-section text-black text-center d-flex align-items-center"
-        style="background-size: cover; background-position: center; height: 250px;">
-        <div class="container">
-            <h2 class="display-4 fw-bold">Descubre las mejores fiestas</h2>
-            <p class="lead">Eventos únicos, experiencias inolvidables. ¡Únete ahora!</p>
-        </div>
-    </div>
-@endsection
-
 @section('content')
 <div class="container col-6 mt-5 card shadow-lg p-5">
     <h2 class="text-center mb-4">Pagar evento: {{ $event->title }}</h2>

@@ -1,19 +1,12 @@
 @extends('master')
 
-@section('header', 'Provincias de ' . $province->name)
-
-@section('sub_header')
-    <div class="hero-section text-black text-center d-flex align-items-center"
-        style="background-size: cover; background-position: center; height: 250px;">
+@section('header')
         <div class="container">
-            <h2 class="display-4 fw-bold">Descubre las mejores fiestas</h2>
-            <p class="lead">Eventos únicos, experiencias inolvidables. ¡Únete ahora!</p>
             @if(Auth::check() && Auth::user()->role === 'creator')
-                <a href="{{ route('towns.create', ['province_id' => $province->id]) }}" class="btn btn-primary">Añadir
+                <a href="{{ route('towns.create', ['province_id' => $province->id]) }}" class="btn fw-bold" style="background-color: #f28dd0; color: white;">Añadir
                     pueblo</a>
             @endif
         </div>
-    </div>
 @endsection
 
 @section('content')
@@ -21,7 +14,7 @@
         <div class="row g-4">
             <div class="col-lg-5">
                 <div class="card shadow h-100">
-                    <div class="card-header text-center bg-primary text-white">
+                    <div class="card-header text-center text-white" style="background-color: rgb(11, 64, 161)">
                         <h4 class="mb-0">Eventos de esta provincia</h4>
                     </div>
                     <div class="card-body">
@@ -31,7 +24,7 @@
             </div>
             <div class="col-lg-7">
                 <div class="card shadow">
-                    <div class="card-header text-center bg-primary text-white">
+                    <div class="card-header text-center text-white" style="background-color: rgb(11, 64, 161)">
                         <h4 class="mb-0">Provincias de {{ $province->name }}</h4>
                     </div>
                     <div class="card-body">

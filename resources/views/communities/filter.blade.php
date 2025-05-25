@@ -1,50 +1,47 @@
 @extends('master')
 
-@section('header', 'Comunidades')
-@section('sub_header')
-    <div class="hero-section text-black text-center d-flex align-items-center"
-        style=" background-size: cover; background-position: center; height: 250px;">
-        <div class="container">
-            <h2 class="display-4 fw-bold">Descubre los mejores eventos</h2>
-            <p class="lead">Eventos únicos, experiencias inolvidables. ¡Únete ahora!</p>
-        </div>
-    </div>
+@section('header')
+    {{-- Buscador solo en esta vista --}}
+    <form action="{{ route('communities.search') }}" method="GET" class="input-group mt-3 justify-content-center"
+        style="max-width: 500px; margin: 0 auto;">
+        <input type="text" name="data" class="form-control" placeholder="Encuentra tu comunidad"
+            aria-label="Buscar comunidad">
+        <button type="submit" class="btn fw-bold text-black" style="background-color: #f28dd0; color: white;">Buscar</button>
+    </form>
 @endsection
+
+@section('main_title', '¡Estas son las comunidades disponibles!')
+
+
 @section('content')
-    <div class="container">
-        <div class="card shadow-lg p-4">
-            <h2 class="text-center mb-4">¡Estas son las comunidades disponibles!</h2>
-            <div class="row mb-3">
-                <div class="col-md-8 offset-md-2">
-                    <form action="{{ route('communities.search') }}" method="GET" class="input-group">
-                        <input type="text" name="dato" class="form-control" placeholder="Encuentra tu comunidad">
-                        <button type="submit" class="btn btn-dark">Buscar</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        @if(isset($communities))
-        <div class="row row-cols-1 row-cols-md-4 g-4 mt-3">
-            @forelse ($communities as $community)
-                <div class="col">
-                    <div class="card h-100 text-center shadow-sm">
-                        <div class="card-body d-flex align-items-center justify-content-center">
-                            <a href="{{ route('communities.provinces', $community->id) }}"
-                                class="stretched-link text-decoration-none fw-bold">
-                                <img src="{{ asset($community->image) }}" class="img-fluid">
-                                {{ $community->name }}
-                            </a>
-                        </div>
+<div class="container">
+    @if(isset($communities))
+        <div class="mt-4 row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4"">
+              @forelse ($communities as $community)
+                        <div class=" col">
+                    <div class="card h-100 shadow-sm" style="border: 1px solid rgb(11, 64, 161);">
+                        <a href="{{ route('communities.provinces', $community->id) }}" class="text-decoration-none">
+                            <div class="image-container" style="height: 180px; overflow: hidden;">
+                                <img src="{{ asset($community->image) }}" class="img-fluid w-100 h-100 p-2  object-cover"
+                                    alt="{{ $community->name }}">
+                            </div>
+                            <div class="card-body p-3 text-center">
+                                <h5 class="card-title fw-bold mb-0" style="color: rgb(11, 64, 161);">{{ $community->name }}</h5>
+                            </div>
+                        </a>
                     </div>
                 </div>
             @empty
-                <div class="col">
-                    <div class="card-body d-flex align-items-center justify-content-center">
-                        <span>No se han encontrado resultados</span>  
+            <div class="col">
+                <div class="card h-100 shadow-sm text-center d-flex align-items-center justify-content-center">
+                    <div class="card-body">
+                        <h5 class="text-muted">No se han encontrado resultados</h5>
                     </div>
                 </div>
-            @endforelse
+            </div>
+
+        @endforelse
         </div>
-    </div>
+        </div>
     @endif
 @endsection

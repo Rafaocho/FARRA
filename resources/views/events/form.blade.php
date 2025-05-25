@@ -1,17 +1,5 @@
 @extends("master")
 
-@section("header", isset($event) ? "Editar Evento" : "Crear Evento")
-
-@section('sub_header')
-    <div class="hero-section text-black text-center d-flex align-items-center"
-        style="background-size: cover; background-position: center; height: 250px;">
-        <div class="container">
-            <h2 class="display-4 fw-bold">Descubre las mejores fiestas</h2>
-            <p class="lead">Eventos únicos, experiencias inolvidables. ¡Únete ahora!</p>
-        </div>
-    </div>
-@endsection
-
 @section("content")
     <div class="container mt-2">
         <div class="card shadow-lg p-5">
@@ -76,8 +64,10 @@
 
                 
                 <div class="d-flex justify-content-around">
-                    <button type="submit" class="btn btn-primary">Guardar evento</button>
-                    <a class="btn btn-danger" href="{{ route('index') }}">Cancelar</a>
+                <a class="btn btn-danger" href="{{ route('towns.events', $event->town_id ?? $townId) }}">Cancelar</a>
+
+                <button type="submit" class="btn btn-primary">Guardar evento</button>
+                    
                 </div>
             </form>
         </div>

@@ -1,17 +1,13 @@
 @extends('master')
 
-@section('header', 'Eventos en ' . $town->name)
 
-@section('sub_header')
-<div class="hero-section text-black text-center d-flex align-items-center" style="background-size: cover; background-position: center; height: 250px;">
+@section('header')
+
     <div class="container">
-        <h2 class="display-4 fw-bold">Descubre las mejores fiestas</h2>
-        <p class="lead">Eventos únicos, experiencias inolvidables. ¡Únete ahora!</p>
         @if(Auth::check() && Auth::user()->role === 'creator')
-            <a href="{{ route('events.create', ['town_id' => $town->id]) }}" class="btn btn-primary">Crear evento</a>
+            <a href="{{ route('events.create', ['town_id' => $town->id]) }}" class="btn fw-bold" style="background-color: #f28dd0; color: white;">Crear evento</a>
         @endif
     </div>
-</div>
 @endsection
 
 @section('content')
