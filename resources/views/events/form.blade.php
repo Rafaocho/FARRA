@@ -68,9 +68,16 @@
                     </select>
                 </div>
 
-                <div class="d-flex justify-content-between">
-                    <button type="submit" class="btn btn-success">Enviar</button>
-                    <a class="btn btn-info" href="{{ route('index') }}">MENÚ</a>
+                <div class="mb-3">
+                    <label for="price" class="form-label">Precio (€):</label>
+                    <input type="number" step="0.01" min="0" name="price" id="price" class="form-control"
+                        value="{{ old('price', $event->price ?? 0) }}" required>
+                </div>
+
+                
+                <div class="d-flex justify-content-around">
+                    <button type="submit" class="btn btn-primary">Guardar evento</button>
+                    <a class="btn btn-danger" href="{{ route('index') }}">Cancelar</a>
                 </div>
             </form>
         </div>

@@ -44,7 +44,8 @@ Route::post('/users/{id}/follow', [ProfileController::class, 'follow'])->name('u
 Route::post('/users/{id}/unfollow', [ProfileController::class, 'unfollow'])->name('users.unfollow');
 Route::post('/towns/{town}/favorite', [\App\Http\Controllers\TownsController::class, 'toggleFavorite'])->name('towns.toggleFavorite');
 Route::get('/profile/{user}', [ProfileController::class, 'show'])->name('profile.show');
-
+Route::get('/event/{id}/pay', [EventsController::class, 'showPayment'])->name('events.pay');
+Route::post('/event/{id}/pay', [EventsController::class, 'processPayment'])->name('event.processPayment');
 
 Route::middleware(['auth', 'role:creator,user'])->group(function () {
 Route::post('/eventos/{id}/join', [App\Http\Controllers\EventsController::class, 'join'])->name('event.join');

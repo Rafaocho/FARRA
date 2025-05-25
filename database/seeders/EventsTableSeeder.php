@@ -20,6 +20,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 2,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'San Pedro de Xesteda en Cerceda',
@@ -29,6 +30,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 2,
             'creator_id' => 1,
+            'price' => 3.00,
         ]);
         DB::table('events')->insert([
             'title' => 'San Pedro Fiz de Pardecond',
@@ -37,6 +39,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 3,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Festas do Carme de Camelle',
@@ -45,6 +48,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 4,
             'creator_id' => 1,
+            'price' => 2.00,
         ]);
         DB::table('events')->insert([
             'title' => 'San Pedro Felix de Vixoi',
@@ -53,6 +57,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 5,
             'creator_id' => 1,
+            'price' => 5.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Veran A Rúa',
@@ -62,6 +67,7 @@ class EventsTableSeeder extends Seeder
             'minAge' => 1,
             'type' => 'religious',
             'creator_id' => 1,
+            'price' => 5.00,
         ]);
         DB::table('events')->insert([
             'title' => 'XIV Festa Popular',
@@ -71,6 +77,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 7,
             'creator_id' => 1,
+            'price' => 5.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Festas do Carme',
@@ -79,6 +86,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 8,
             'creator_id' => 1,
+            'price' => 3.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Nortada',
@@ -88,6 +96,7 @@ class EventsTableSeeder extends Seeder
             'minAge' => 18,
             'town_id' => 9,
             'creator_id' => 1,
+            'price' => 1.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Noite Musical de Paredes',
@@ -96,6 +105,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 10,
             'creator_id' => 1,
+            'price' => 3.00,
         ]);
         DB::table('events')->insert([
             'title' => 'XVIII Festa da Xuventud',
@@ -104,6 +114,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'party',
             'town_id' => 11,
             'creator_id' => 1,
+            'price' => 2.00,
         ]);
         DB::table('events')->insert([
             'title' => 'III Fentos Festa',
@@ -113,6 +124,7 @@ class EventsTableSeeder extends Seeder
             'minAge' => 9,
             'town_id' => 11,
             'creator_id' => 1,
+            'price' => 1.50,
         ]);
         DB::table('events')->insert([
             'title' => 'Festa da Xuventude',
@@ -122,6 +134,7 @@ class EventsTableSeeder extends Seeder
             'minAge' => 6,
             'town_id' => 12,
             'creator_id' => 1,
+            'price' => 1.50,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de invierno',
@@ -130,6 +143,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 12,
             'creator_id' => 1,
+            'price' => 1.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Festival de la Sidra',
@@ -139,6 +153,7 @@ class EventsTableSeeder extends Seeder
             'minAge' => 18,
             'town_id' => 13,
             'creator_id' => 1,
+            'price' => 3.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta del Bollu en La Peruyal',
@@ -147,6 +162,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'gastronomic',
             'town_id' => 14,
             'creator_id' => 1,
+            'price' => 6.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Feries de San Julián',
@@ -156,6 +172,7 @@ class EventsTableSeeder extends Seeder
             'minAge' => 10,
             'town_id' => 16,
             'creator_id' => 1,
+            'price' => 7.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de San Juliana',
@@ -165,6 +182,7 @@ class EventsTableSeeder extends Seeder
             'minAge' => 5,
             'town_id' => 17,
             'creator_id' => 1,
+            'price' => 8.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Hogueras de San Juan',
@@ -174,6 +192,7 @@ class EventsTableSeeder extends Seeder
             'minAge' => 12,
             'town_id' => 18,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas del Carmen',
@@ -182,6 +201,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 19,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de San Juan',
@@ -191,6 +211,7 @@ class EventsTableSeeder extends Seeder
             'minAge' => 5,
             'town_id' => 20,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de San Juan y San Pedro',
@@ -200,6 +221,7 @@ class EventsTableSeeder extends Seeder
             'minAge' => 6,
             'town_id' => 21,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de San Roque',
@@ -209,6 +231,7 @@ class EventsTableSeeder extends Seeder
             'minAge' => 1,
             'town_id' => 22,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de San Pedro',
@@ -217,6 +240,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 23,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de la Virgen de la Encina',
@@ -225,6 +249,7 @@ class EventsTableSeeder extends Seeder
             'town_id' => 24,
             'type' => 'religious',
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de San Telmo',
@@ -233,6 +258,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 25,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de San Antón',
@@ -241,6 +267,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 26,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Alarde de Hondarribia',
@@ -249,6 +276,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 27,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Carnavales de Tolosa',
@@ -258,6 +286,7 @@ class EventsTableSeeder extends Seeder
             'minAge' => 6,
             'town_id' => 28,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de San Juan',
@@ -267,14 +296,17 @@ class EventsTableSeeder extends Seeder
             'minAge' => 12,
             'town_id' => 29,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de San Pantaleón',
             'description' => 'Sollano-Llantada celebra las Fiestas de San Pantaleón el 27 de julio, con procesiones, música y ambiente festivo.',
             'date' => '2025-07-27',
             'type' => 'party',
+            'minAge' => 0,
             'town_id' => 30,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de Santa Catalina',
@@ -283,6 +315,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 31,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de San Nicolás',
@@ -291,6 +324,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 32,
             'creator_id' => 1,
+            'price' => 3.00,
         ]);
         DB::table('events')->insert([
             'title' => 'La Vijanera',
@@ -300,6 +334,7 @@ class EventsTableSeeder extends Seeder
             'minAge' => 12,
             'town_id' => 33,
             'creator_id' => 1,
+            'price' => 5.00,
         ]);
         DB::table('events')->insert([
             'title' => 'La Folía',
@@ -308,6 +343,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 34,
             'creator_id' => 1,
+            'price' => 5.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Día de Cantabria',
@@ -316,6 +352,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 35,
             'creator_id' => 1,
+            'price' => 5.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas del Santo Cristo del Amparo',
@@ -325,6 +362,7 @@ class EventsTableSeeder extends Seeder
             'minAge' => 12,
             'town_id' => 36,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de Nuestra Señora de Valvanuz',
@@ -333,6 +371,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 37,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Romería a Ujué',
@@ -342,6 +381,7 @@ class EventsTableSeeder extends Seeder
             'minAge' => 9,
             'town_id' => 38,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Exaltación de la Santa Cruz',
@@ -350,6 +390,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 39,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas Patronales de San Adrián',
@@ -359,6 +400,7 @@ class EventsTableSeeder extends Seeder
             'minAge' => 6,
             'town_id' => 40,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Carnaval de Lantz',
@@ -367,6 +409,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'party',
             'town_id' => 41,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Día de la Almadía',
@@ -375,6 +418,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 42,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas del Cristo de los Remedios',
@@ -384,6 +428,7 @@ class EventsTableSeeder extends Seeder
             'minAge' => 12,
             'town_id' => 43,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Cristo de La Canal',
@@ -393,6 +438,7 @@ class EventsTableSeeder extends Seeder
             'minAge' => 10,
             'town_id' => 44,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas Patronales de Luezas',
@@ -401,6 +447,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 45,
             'creator_id' => 1,
+            'price' => 2.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de San Roque',
@@ -409,6 +456,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 46,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de San Juan',
@@ -417,6 +465,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'party',
             'town_id' => 47,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de San Miguel',
@@ -425,6 +474,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 48,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de San Cosme y San Damián',
@@ -433,6 +483,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 49,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de Santo Domingo de Guzmán',
@@ -441,6 +492,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 50,
             'creator_id' => 1,
+            'price' => 3.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de San Vicente Mártir',
@@ -449,6 +501,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 51,
             'creator_id' => 1,
+            'price' => 4.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de San Pedro',
@@ -457,6 +510,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 52,
             'creator_id' => 1,
+            'price' => 5.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Encierros tradicionales',
@@ -465,6 +519,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 53,
             'creator_id' => 1,
+            'price' => 5.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de los Gabarreros',
@@ -473,6 +528,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 54,
             'creator_id' => 1,
+            'price' => 5.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de Santa Águeda',
@@ -481,6 +537,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 55,
             'creator_id' => 1,
+            'price' => 6.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Feria del Chorizo',
@@ -489,6 +546,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'gastronomic',
             'town_id' => 56,
             'creator_id' => 1,
+            'price' => 7.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de la Virgen del Pino y San Roque',
@@ -497,6 +555,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 57,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Ronda popular de Carnaval',
@@ -505,6 +564,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'party',
             'town_id' => 58,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de San Bernabé',
@@ -513,6 +573,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 59,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Semana Santa',
@@ -521,6 +582,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 60,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de San Roque',
@@ -529,6 +591,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 61,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de San Roque',
@@ -537,6 +600,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 62,
             'creator_id' => 1,
+            'price' => 3.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de Astures y Romanos',
@@ -545,6 +609,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 63,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas Patronales de San Roque',
@@ -553,6 +618,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 64,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Romería de la Peregrina',
@@ -561,6 +627,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'gastronomic',
             'town_id' => 65,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de San Guillermo',
@@ -569,6 +636,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 66,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de San Agustín',
@@ -577,6 +645,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'party',
             'town_id' => 67,
             'creator_id' => 1,
+            'price' => 6.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Toro Enmaromado',
@@ -585,6 +654,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'party',
             'town_id' => 68,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de las Victorias',
@@ -593,6 +663,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'party',
             'town_id' => 69,
             'creator_id' => 1,
+            'price' => 8.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de San Agustín',
@@ -601,6 +672,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'party',
             'town_id' => 70,
             'creator_id' => 1,
+            'price' => 3.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de la Peña',
@@ -609,6 +681,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'party',
             'town_id' => 71,
             'creator_id' => 1,
+            'price' => 1.50,
         ]);
         DB::table('events')->insert([
             'title' => 'Semana Renacentista',
@@ -617,6 +690,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 72,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de Nuestra Señora y San Roque',
@@ -625,6 +699,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 73,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de la Virgen de Arriba',
@@ -633,6 +708,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 74,
             'creator_id' => 1,
+            'price' => 2.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Carnaval del Toro',
@@ -641,6 +717,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'party',
             'town_id' => 75,
             'creator_id' => 1,
+            'price' => 3.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de Nuestra Señora de la Asunción',
@@ -649,6 +726,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 76,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Corpus Christi',
@@ -657,6 +735,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 77,
             'creator_id' => 1,
+            'price' => 3.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de la Virgen del Castañar',
@@ -665,6 +744,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 78,
             'creator_id' => 1,
+            'price' => 4.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de Nuestra Señora del Pilar',
@@ -673,6 +753,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 79,
             'creator_id' => 1,
+            'price' => 6.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de la Virgen de Chilla',
@@ -681,6 +762,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 80,
             'creator_id' => 1,
+            'price' => 2.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de San Pedro del Barco',
@@ -689,6 +771,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 81,
             'creator_id' => 1,
+            'price' => 1.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de la Virgen de la Vega',
@@ -697,6 +780,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 82,
             'creator_id' => 1,
+            'price' => 6.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas del Santísimo Cristo de los Remedios',
@@ -705,6 +789,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 83,
             'creator_id' => 1,
+            'price' => 1.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de Los Conversos',
@@ -713,6 +798,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 84,
             'creator_id' => 1,
+            'price' => 2.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Feria de San Bartolomé',
@@ -721,6 +807,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 85,
             'creator_id' => 1,
+            'price' => 6.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta del Queso',
@@ -729,6 +816,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'gastronomic',
             'town_id' => 86,
             'creator_id' => 1,
+            'price' => 2.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de San Juan',
@@ -737,6 +825,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 87,
             'creator_id' => 1,
+            'price' => 4.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas del Corpus',
@@ -745,6 +834,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 88,
             'creator_id' => 1,
+            'price' => 6.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Feria de San Mateo',
@@ -753,6 +843,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 89,
             'creator_id' => 1,
+            'price' => 1.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Semana Santa',
@@ -761,6 +852,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 90,
             'creator_id' => 1,
+            'price' => 1.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas del Cristo de las Aguas',
@@ -769,6 +861,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 91,
             'creator_id' => 1,
+            'price' => 1.20,
         ]);
         DB::table('events')->insert([
             'title' => 'Feria del Toro',
@@ -777,6 +870,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 92,
             'creator_id' => 1,
+            'price' => 2.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Feria y Fiestas',
@@ -785,6 +879,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'party',
             'town_id' => 93,
             'creator_id' => 1,
+            'price' => 2.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Romería del Cristo del Valle',
@@ -793,6 +888,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 94,
             'creator_id' => 1,
+            'price' => 6.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas Patronales de la Virgen del Rosario',
@@ -801,6 +897,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 95,
             'creator_id' => 1,
+            'price' => 10.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de San Bartolomé',
@@ -809,6 +906,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 96,
             'creator_id' => 1,
+            'price' => 2.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de la Virgen de Cortes',
@@ -817,6 +915,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 97,
             'creator_id' => 1,
+            'price' => 1.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Semana Santa Chinchillana',
@@ -825,6 +924,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 98,
             'creator_id' => 1,
+            'price' => 1.20,
         ]);
         DB::table('events')->insert([
             'title' => 'Feria de Tradiciones',
@@ -833,6 +933,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'gastronomic',
             'town_id' => 99,
             'creator_id' => 1,
+            'price' => 1.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Semana Santa y LeturAlma',
@@ -841,6 +942,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'party',
             'town_id' => 100,
             'creator_id' => 1,
+            'price' => 2.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Moros y Cristianos',
@@ -849,6 +951,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 101,
             'creator_id' => 1,
+            'price' => 3.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas Patronales en honor a San Roque',
@@ -857,6 +960,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 102,
             'creator_id' => 1,
+            'price' => 2.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de la Virgen del Carmen',
@@ -865,6 +969,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 103,
             'creator_id' => 1,
+            'price' => 3.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Jornadas Gastronómicas del Jamón',
@@ -873,6 +978,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'gastronomic',
             'town_id' => 104,
             'creator_id' => 1,
+            'price' => 4.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas Patronales de San José',
@@ -881,6 +987,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 105,
             'creator_id' => 1,
+            'price' => 4.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de San Salvador',
@@ -889,6 +996,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'party',
             'town_id' => 106,
             'creator_id' => 1,
+            'price' => 5.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Festes de la Mare de Déu',
@@ -897,6 +1005,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 107,
             'creator_id' => 1,
+            'price' => 6.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Moros y Cristianos',
@@ -905,6 +1014,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 108,
             'creator_id' => 1,
+            'price' => 7.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Festes Patronals',
@@ -913,6 +1023,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 109,
             'creator_id' => 1,
+            'price' => 8.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Festes de la Mare de Déu',
@@ -921,6 +1032,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 110,
             'creator_id' => 1,
+            'price' => 2.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Festes de Sant Cristòfol',
@@ -929,6 +1041,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 111,
             'creator_id' => 1,
+            'price' => 1.10,
         ]);
         DB::table('events')->insert([
             'title' => 'Festes de Sant Joan',
@@ -937,6 +1050,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 112,
             'creator_id' => 1,
+            'price' => 3.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Festes de Sant Mateu',
@@ -945,6 +1059,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 113,
             'creator_id' => 1,
+            'price' => 4.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fia-Faia',
@@ -953,6 +1068,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 114,
             'creator_id' => 1,
+            'price' => 5.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Festa Major',
@@ -961,6 +1077,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'party',
             'town_id' => 115,
             'creator_id' => 1,
+            'price' => 6.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Festa Major',
@@ -969,6 +1086,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 116,
             'creator_id' => 1,
+            'price' => 7.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Festa Major de Sant Martí',
@@ -977,6 +1095,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'gastronomic',
             'town_id' => 117,
             'creator_id' => 1,
+            'price' => 2.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Festa Major',
@@ -985,6 +1104,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'party',
             'town_id' => 118,
             'creator_id' => 1,
+            'price' => 8.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Festa Major de Casserres',
@@ -993,6 +1113,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'party',
             'town_id' => 119,
             'creator_id' => 1,
+            'price' => 2.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Festa Major do Perafita',
@@ -1001,6 +1122,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 120,
             'creator_id' => 1,
+            'price' => 1.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Festas Majores Castellfollit',
@@ -1009,6 +1131,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 121,
             'creator_id' => 1,
+            'price' => 3.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Festa Major de Sant Sebastià',
@@ -1017,6 +1140,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 122,
             'creator_id' => 1,
+            'price' => 6.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Feria de Agosto',
@@ -1025,6 +1149,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'party',
             'town_id' => 123,
             'creator_id' => 1,
+            'price' => 4.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Feria y Fiestas Patronales',
@@ -1033,6 +1158,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 124,
             'creator_id' => 1,
+            'price' => 4.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Feria de San Blas',
@@ -1041,6 +1167,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 125,
             'creator_id' => 1,
+            'price' => 2.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Feria de Agosto y Romería',
@@ -1049,6 +1176,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 126,
             'creator_id' => 1,
+            'price' => 1.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Feria de Bornos',
@@ -1057,6 +1185,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 127,
             'creator_id' => 1,
+            'price' => 0.50,
         ]);
         DB::table('events')->insert([
             'title' => 'Feria de Agosto',
@@ -1065,6 +1194,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'party',
             'town_id' => 128,
             'creator_id' => 1,
+            'price' => 0.20,
         ]);
         DB::table('events')->insert([
             'title' => 'Sexenni de Morella',
@@ -1073,6 +1203,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 129,
             'creator_id' => 1,
+            'price' => 0.30,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas Patronales',
@@ -1081,6 +1212,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 130,
             'creator_id' => 1,
+            'price' => 1.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas Patronales',
@@ -1089,6 +1221,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 131,
             'creator_id' => 1,
+            'price' => 2.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas Patronales',
@@ -1097,6 +1230,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 132,
             'creator_id' => 1,
+            'price' => 3.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de San Cristóbal',
@@ -1105,6 +1239,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 133,
             'creator_id' => 1,
+            'price' => 4.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas Patronales',
@@ -1113,6 +1248,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 134,
             'creator_id' => 1,
+            'price' => 2.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta del Queso',
@@ -1121,6 +1257,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'gastronomic',
             'town_id' => 135,
             'creator_id' => 1,
+            'price' => 5.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Feria Real',
@@ -1129,6 +1266,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 136,
             'creator_id' => 1,
+            'price' => 6.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de Todos los Santos',
@@ -1137,6 +1275,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 137,
             'creator_id' => 1,
+            'price' => 2.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Feria Real',
@@ -1145,6 +1284,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 138,
             'creator_id' => 1,
+            'price' => 8.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Feria y Fiestas Patronales',
@@ -1153,6 +1293,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 139,
             'creator_id' => 1,
+            'price' => 2.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de la Virgen de la Estrella',
@@ -1161,6 +1302,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 140,
             'creator_id' => 1,
+            'price' => 2.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas Patronales de San Agustín',
@@ -1169,6 +1311,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 141,
             'creator_id' => 1,
+            'price' => 2.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas Patronales de la Virgen del Rosario',
@@ -1177,6 +1320,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 142,
             'creator_id' => 1,
+            'price' => 2.50,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de San Juan',
@@ -1185,6 +1329,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 143,
             'creator_id' => 1,
+            'price' => 4.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta Medieval',
@@ -1193,6 +1338,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 144,
             'creator_id' => 1,
+            'price' => 6.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta Mayor',
@@ -1201,6 +1347,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 145,
             'creator_id' => 1,
+            'price' => 1.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Feria del Arroz',
@@ -1209,6 +1356,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'gastronomic',
             'town_id' => 146,
             'creator_id' => 1,
+            'price' => 1.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta Mayor',
@@ -1217,6 +1365,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'party',
             'town_id' => 147,
             'creator_id' => 1,
+            'price' => 7.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta Mayor',
@@ -1226,6 +1375,7 @@ class EventsTableSeeder extends Seeder
             'minAge' => 10,
             'town_id' => 148,
             'creator_id' => 1,
+            'price' => 8.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Feria del Queso y el Embutido',
@@ -1234,6 +1384,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'gastronomic',
             'town_id' => 149,
             'creator_id' => 1,
+            'price' => 4.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de San Vicente',
@@ -1242,6 +1393,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 150,
             'creator_id' => 1,
+            'price' => 2.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de la Virgen de los Remedios',
@@ -1250,6 +1402,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 151,
             'creator_id' => 1,
+            'price' => 7.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de San Sebastián',
@@ -1258,6 +1411,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 152,
             'creator_id' => 1,
+            'price' => 8.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de la Virgen del Rosario',
@@ -1266,6 +1420,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 153,
             'creator_id' => 1,
+            'price' => 2.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de la Virgen del Mayor Dolor',
@@ -1274,6 +1429,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 154,
             'creator_id' => 1,
+            'price' => 9.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de la Virgen de la Candelaria',
@@ -1282,6 +1438,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 155,
             'creator_id' => 1,
+            'price' => 1.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de la Virgen de los Remedios',
@@ -1290,6 +1447,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 156,
             'creator_id' => 1,
+            'price' => 3.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de la Virgen de las Nieves',
@@ -1298,6 +1456,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 157,
             'creator_id' => 1,
+            'price' => 9.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de San Juan',
@@ -1306,6 +1465,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'party',
             'town_id' => 158,
             'creator_id' => 1,
+            'price' => 4.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de San Sebastián',
@@ -1314,6 +1474,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 159,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de la Virgen de la Peña',
@@ -1322,6 +1483,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 160,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de San Juan',
@@ -1330,6 +1492,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 161,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de la Virgen de la Bella',
@@ -1338,6 +1501,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 162,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de San Sebastián',
@@ -1346,6 +1510,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 163,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de la Virgen de la Cabeza',
@@ -1354,6 +1519,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 164,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de la Virgen de los Remedios',
@@ -1362,6 +1528,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 165,
             'creator_id' => 1,
+            'price' => 2.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas del Almendro en Flor',
@@ -1370,6 +1537,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'gastronomic',
             'town_id' => 166,
             'creator_id' => 1,
+            'price' => 1.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de la Rama',
@@ -1378,6 +1546,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 167,
             'creator_id' => 1,
+            'price' => 1.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de San Antonio',
@@ -1386,6 +1555,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 168,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de San Roque',
@@ -1394,6 +1564,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 169,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de la Manzana',
@@ -1402,6 +1573,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'gastronomic',
             'town_id' => 170,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Festa Major de Sort',
@@ -1410,6 +1582,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'party',
             'town_id' => 171,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fira del Torró i la Xocolata',
@@ -1418,6 +1591,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'gastronomic',
             'town_id' => 172,
             'creator_id' => 1,
+            'price' => 2.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Festa Major de La Seu d’Urgell',
@@ -1426,6 +1600,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'party',
             'town_id' => 173,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Festa Major de Tremp',
@@ -1434,6 +1609,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 174,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de San José',
@@ -1442,6 +1618,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'gastronomic',
             'town_id' => 175,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de la Virgen de Gracia',
@@ -1450,6 +1627,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 176,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de Santa María Magdalena',
@@ -1458,6 +1636,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 177,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de la Virgen de la Peña Sacra',
@@ -1466,6 +1645,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'party',
             'town_id' => 178,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas patronales de la Virgen de Gracia y San Roque',
@@ -1474,6 +1654,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 179,
             'creator_id' => 1,
+            'price' => 1.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de la Virgen de la Nueva',
@@ -1482,6 +1663,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 180,
             'creator_id' => 1,
+            'price' => 1.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de San Roque',
@@ -1490,6 +1672,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 181,
             'creator_id' => 1,
+            'price' => 2.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de Nuestra Señora del Roble',
@@ -1498,6 +1681,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 182,
             'creator_id' => 1,
+            'price' => 5.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de San Antonio',
@@ -1506,6 +1690,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 183,
             'creator_id' => 1,
+            'price' => 7.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Festival de las Tres Culturas',
@@ -1514,6 +1699,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 184,
             'creator_id' => 1,
+            'price' => 9.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Noche del Vino',
@@ -1522,6 +1708,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'gastronomic',
             'town_id' => 185,
             'creator_id' => 1,
+            'price' => 2.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Día de la Morcilla',
@@ -1530,6 +1717,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'gastronomic',
             'town_id' => 186,
             'creator_id' => 1,
+            'price' => 1.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta del Ajoblanco',
@@ -1538,6 +1726,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'gastronomic',
             'town_id' => 187,
             'creator_id' => 1,
+            'price' => 3.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas Patronales en honor a San Sebastián',
@@ -1546,6 +1735,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 188,
             'creator_id' => 1,
+            'price' => 7.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas en honor a San Agustín',
@@ -1554,6 +1744,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 189,
             'creator_id' => 1,
+            'price' => 8.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de San Bartolomé',
@@ -1562,6 +1753,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'party',
             'town_id' => 190,
             'creator_id' => 1,
+            'price' => 1.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiestas de San Roque',
@@ -1570,6 +1762,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'party',
             'town_id' => 191,
             'creator_id' => 1,
+            'price' => 4.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Semana Cultural y Fiestas Patronales',
@@ -1578,6 +1771,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'party',
             'town_id' => 192,
             'creator_id' => 1,
+            'price' => 7.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Romería de la Virgen de Gracia',
@@ -1586,6 +1780,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 193,
             'creator_id' => 1,
+            'price' => 8.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fiesta de la Aceituna',
@@ -1594,6 +1789,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'gastronomic',
             'town_id' => 194,
             'creator_id' => 1,
+            'price' => 9.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Feria de San Bartolomé',
@@ -1602,6 +1798,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'party',
             'town_id' => 195,
             'creator_id' => 1,
+            'price' => 3.00,
         ]);  
         DB::table('events')->insert([
             'title' => 'Semana Santa Campanera',
@@ -1610,6 +1807,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 196,
             'creator_id' => 1,
+            'price' => 1.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Feria de San Juan',
@@ -1618,6 +1816,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'party',
             'town_id' => 197,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Festa del Renaixement',
@@ -1626,6 +1825,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'religious',
             'town_id' => 198,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Mercat Medieval',
@@ -1634,6 +1834,7 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 199,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
         DB::table('events')->insert([
             'title' => 'Fira de Bruixeria',
@@ -1642,223 +1843,251 @@ class EventsTableSeeder extends Seeder
             'type' => 'cultural',
             'town_id' => 200,
             'creator_id' => 1,
+            'price' => 0.00,
         ]);
-        DB::table('events')->insert([
-            'title' => 'Festa del Raïm',
-            'description' => 'La Fatarella celebra en octubre la Festa del Raïm con catas de vino, música tradicional y actividades relacionadas con la vendimia.',
-            'date' => '2025-10-11',
-            'type' => 'cultural',
-            'town_id' => 201,
-            'creator_id' => 1,
-        ]);
-        DB::table('events')->insert([
-            'title' => 'Romería de San Roque',
-            'description' => 'Garachico honra a San Roque con una de las romerías más multitudinarias de Tenerife, donde tradición y devoción se dan la mano.',
-            'date' => '2025-08-16',
-            'type' => 'cultural',
-            'town_id' => 202,
-            'creator_id' => 1,
-        ]);
-        DB::table('events')->insert([
-            'title' => 'Fiestas de San Antonio',
-            'description' => 'El Tanque celebra en junio sus fiestas patronales en honor a San Antonio con procesiones, ferias y actividades para todos.',
-            'date' => '2025-06-13',
-            'type' => 'cultural',
-            'town_id' => 203,
-            'creator_id' => 1,
-        ]);
-        DB::table('events')->insert([
-            'title' => 'Fiesta de San Roque',
-            'description' => 'Vilaflor se llena de color en agosto durante las fiestas de San Roque, con peregrinaciones, bailes típicos y misas.',
-            'date' => '2025-08-16',
-            'type' => 'religious',
-            'town_id' => 204,
-            'creator_id' => 1,
-        ]);
-        DB::table('events')->insert([
-            'title' => 'Romería de San Sebastián',
-            'description' => 'Buenavista del Norte inicia el año con la Romería de San Sebastián, una fiesta religiosa y folclórica muy esperada en la comarca.',
-            'date' => '2025-01-20',
-            'type' => 'cultural',
-            'town_id' => 205,
-            'creator_id' => 1,
-        ]);
-        DB::table('events')->insert([
-            'title' => 'Fiestas de San Joaquín',
-            'description' => 'Fasnia celebra en agosto las fiestas en honor a San Joaquín, patrono del municipio, con actividades religiosas y populares.',
-            'date' => '2025-08-16',
-            'type' => 'cultural',
-            'town_id' => 206,
-            'creator_id' => 1,
-        ]);
-        DB::table('events')->insert([
-            'title' => 'Fiesta de San Bartolomé',
-            'description' => 'Salcedillo celebra en agosto sus fiestas en honor a San Bartolomé, con actos religiosos y encuentros vecinales.',
-            'date' => '2025-08-24',
-            'type' => 'cultural',
-            'town_id' => 207,
-            'creator_id' => 1,
-        ]);
-        DB::table('events')->insert([
-            'title' => 'Fiestas patronales en honor a San Bartolomé',
-            'description' => 'Almohaja honra a San Bartolomé cada agosto con misas, verbenas y actividades tradicionales en la plaza del pueblo.',
-            'date' => '2025-08-24',
-            'type' => 'religious',
-            'town_id' => 208,
-            'creator_id' => 1,
-        ]);
-        DB::table('events')->insert([
-            'title' => 'Fiestas de San Bartolomé',
-            'description' => 'Aguatón se llena de vida en agosto con sus fiestas patronales en honor a San Bartolomé, con música, comida y tradición.',
-            'date' => '2025-08-24',
-            'type' => 'cultural',
-            'town_id' => 209,
-            'creator_id' => 1,
-        ]);
-        DB::table('events')->insert([
-            'title' => 'Fiestas patronales en honor a San Bartolomé',
-            'description' => 'Bádenas celebra sus fiestas en agosto con honor a San Bartolomé, manteniendo viva la tradición y el espíritu comunitario.',
-            'date' => '2025-08-24',
-            'type' => 'cultural',
-            'town_id' => 210,
-            'creator_id' => 1,
-        ]);
-        DB::table('events')->insert([
-            'title' => 'Fiestas de San Bartolomé',
-            'description' => 'La Fresneda se engalana en agosto para festejar a San Bartolomé con danzas tradicionales, juegos y procesiones.',
-            'date' => '2025-08-24',
-            'type' => 'religious',
-            'town_id' => 211,
-            'creator_id' => 1,
-        ]);
-        DB::table('events')->insert([
-            'title' => 'Fiestas de Santa María y San Julián',
-            'description' => 'Albarracín celebra en septiembre las fiestas de sus patronos con música, fuegos artificiales y actividades culturales.',
-            'date' => '2025-09-12',
-            'type' => 'party',
-            'town_id' => 212,
-            'creator_id' => 1,
-        ]);
-        DB::table('events')->insert([
-            'title' => 'Fiestas patronales de San Roque',
-            'description' => 'Valderrobres vive intensamente las fiestas de San Roque en agosto, con encierros, conciertos y actos religiosos.',
-            'date' => '2025-08-16',
-            'type' => 'party',
-            'town_id' => 213,
-            'creator_id' => 1,
-        ]);
-        DB::table('events')->insert([
-            'title' => 'Semana Cultural y Fiestas de San Antonio',
-            'description' => 'Rubielos de Mora celebra en junio su Semana Cultural y las fiestas de San Antonio con exposiciones, teatro y conciertos.',
-            'date' => '2025-06-13',
-            'type' => 'party',
-            'town_id' => 214,
-            'creator_id' => 1,
-        ]);
-        DB::table('events')->insert([
-            'title' => 'Fiesta de la Virgen de los Remedios',
-            'description' => 'Segura de los Baños rinde homenaje a la Virgen de los Remedios el 8 de septiembre con actos religiosos y encuentros populares.',
-            'date' => '2025-09-08',
-            'type' => 'party',
-            'town_id' => 215,
-            'creator_id' => 1,
-        ]);
-        DB::table('events')->insert([
-            'title' => 'Fiesta de San Sebastián',
-            'description' => 'La Puebla de Montalbán celebra cada 20 de enero la Fiesta de San Sebastián con actos religiosos, danzas populares y hogueras.',
-            'date' => '2025-01-20',
-            'type' => 'party',
-            'town_id' => 216,
-            'creator_id' => 1,
-        ]);
-        DB::table('events')->insert([
-            'title' => 'Fiesta de la Virgen del Castillo',
-            'description' => 'Tembleque honra a la Virgen del Castillo el 15 de agosto con procesiones, música tradicional y actividades culturales.',
-            'date' => '2025-08-15',
-            'type' => 'party',
-            'town_id' => 217,
-            'creator_id' => 1,
-        ]);
-        DB::table('events')->insert([
-            'title' => 'Fiesta de San Juan',
-            'description' => 'Yunclillos celebra el 24 de junio la festividad de San Juan con verbenas populares, hogueras y eventos familiares.',
-            'date' => '2025-06-24',
-            'type' => 'party',
-            'town_id' => 218,
-            'creator_id' => 1,
-        ]);
-        DB::table('events')->insert([
-            'title' => 'Fiesta de San José',
-            'description' => 'Cofrentes vive el 19 de marzo la festividad de San José con misas, mascletàs y festejos falleros.',
-            'date' => '2025-03-19',
-            'type' => 'cultural',
-            'town_id' => 219,
-            'creator_id' => 1,
-        ]);
-        DB::table('events')->insert([
-            'title' => 'Fiesta de la Virgen del Rosario',
-            'description' => 'Albuixech celebra el 7 de octubre sus fiestas patronales en honor a la Virgen del Rosario con actividades religiosas y festivas.',
-            'date' => '2025-10-07',
-            'type' => 'religious',
-            'town_id' => 220,
-            'creator_id' => 1,
-        ]);
-        DB::table('events')->insert([
-            'title' => 'Fiesta de San Sebastián',
-            'description' => 'Llocnou de la Corona honra a San Sebastián el 20 de enero con actos religiosos y celebraciones populares.',
-            'date' => '2025-01-20',
-            'type' => 'religious',
-            'town_id' => 221,
-            'creator_id' => 1,
-        ]);
-        DB::table('events')->insert([
-            'title' => 'Fiesta de la Virgen del Socorro',
-            'description' => 'Cifuentes celebra el 8 de septiembre su tradicional fiesta en honor a la Virgen del Socorro con procesiones y eventos locales.',
-            'date' => '2025-09-08',
-            'type' => 'religious',
-            'town_id' => 222,
-            'creator_id' => 1,
-        ]);
-        DB::table('events')->insert([
-            'title' => 'Fiesta de la Virgen de la Peña',
-            'description' => 'Sigüenza vive intensamente el 15 de agosto con sus fiestas en honor a la Virgen de la Peña, destacando sus tradiciones y cultura.',
-            'date' => '2025-08-15',
-            'type' => 'religious',
-            'town_id' => 223,
-            'creator_id' => 1,
-        ]);
-        DB::table('events')->insert([
-            'title' => 'Fiesta de la Virgen de la Asunción',
-            'description' => 'Alcalá del Júcar celebra el 15 de agosto su fiesta grande en honor a la Virgen de la Asunción con actividades culturales y religiosas.',
-            'date' => '2025-08-15',
-            'type' => 'religious',
-            'town_id' => 224,
-            'creator_id' => 1,
-        ]);
-        DB::table('events')->insert([
-            'title' => 'Fiesta de la Virgen del Rosario',
-            'description' => 'La Almunia de Doña Godina honra a la Virgen del Rosario el 7 de octubre con desfiles, conciertos y tradición popular.',
-            'date' => '2025-10-07',
-            'type' => 'party',
-            'town_id' => 225,
-            'creator_id' => 1,
-        ]);
-        DB::table('events')->insert([
-            'title' => 'Fiesta de la Virgen de los Remedios',
-            'description' => 'Belchite celebra el 8 de septiembre la Fiesta de la Virgen de los Remedios con procesiones, ferias y actividades tradicionales.',
-            'date' => '2025-09-08',
-            'type' => 'religious',
-            'town_id' => 226,
-            'creator_id' => 1,
-        ]);
-        
-        DB::table('events')->insert([
-            'title' => 'Fiesta de la Virgen del Pilar',
-            'description' => 'Mequinenza honra a la Virgen del Pilar el 12 de octubre con actos religiosos, música, fuegos artificiales y cultura popular aragonesa.',
-            'date' => '2025-10-12',
-            'type' => 'religious',
-            'town_id' => 227,
-            'creator_id' => 1,
-        ]);
-    }
+            DB::table('events')->insert([
+        'title' => 'Festa del Raïm',
+        'description' => 'La Fatarella celebra en octubre la Festa del Raïm con catas de vino, música tradicional y actividades relacionadas con la vendimia.',
+        'date' => '2025-10-11',
+        'type' => 'cultural',
+        'town_id' => 201,
+        'creator_id' => 1,
+        'price' => 15.00,
+    ]);
+    DB::table('events')->insert([
+        'title' => 'Romería de San Roque',
+        'description' => 'Garachico honra a San Roque con una de las romerías más multitudinarias de Tenerife, donde tradición y devoción se dan la mano.',
+        'date' => '2025-08-16',
+        'type' => 'cultural',
+        'town_id' => 202,
+        'creator_id' => 1,
+        'price' => 0.00,
+    ]);
+    DB::table('events')->insert([
+        'title' => 'Fiestas de San Antonio',
+        'description' => 'El Tanque celebra en junio sus fiestas patronales en honor a San Antonio con procesiones, ferias y actividades para todos.',
+        'date' => '2025-06-13',
+        'type' => 'cultural',
+        'town_id' => 203,
+        'creator_id' => 1,
+        'price' => 0.00,
+    ]);
+    DB::table('events')->insert([
+        'title' => 'Fiesta de San Roque',
+        'description' => 'Vilaflor se llena de color en agosto durante las fiestas de San Roque, con peregrinaciones, bailes típicos y misas.',
+        'date' => '2025-08-16',
+        'type' => 'religious',
+        'town_id' => 204,
+        'creator_id' => 1,
+        'price' => 0.00,
+    ]);
+    DB::table('events')->insert([
+        'title' => 'Romería de San Sebastián',
+        'description' => 'Buenavista del Norte inicia el año con la Romería de San Sebastián, una fiesta religiosa y folclórica muy esperada en la comarca.',
+        'date' => '2025-01-20',
+        'type' => 'cultural',
+        'town_id' => 205,
+        'creator_id' => 1,
+        'price' => 0.00,
+    ]);
+    DB::table('events')->insert([
+        'title' => 'Fiestas de San Joaquín',
+        'description' => 'Fasnia celebra en agosto las fiestas en honor a San Joaquín, patrono del municipio, con actividades religiosas y populares.',
+        'date' => '2025-08-16',
+        'type' => 'cultural',
+        'town_id' => 206,
+        'creator_id' => 1,
+        'price' => 0.00,
+    ]);
+    DB::table('events')->insert([
+        'title' => 'Fiesta de San Bartolomé',
+        'description' => 'Salcedillo celebra en agosto sus fiestas en honor a San Bartolomé, con actos religiosos y encuentros vecinales.',
+        'date' => '2025-08-24',
+        'type' => 'cultural',
+        'town_id' => 207,
+        'creator_id' => 1,
+        'price' => 0.00,
+    ]);
+    DB::table('events')->insert([
+        'title' => 'Fiestas patronales en honor a San Bartolomé',
+        'description' => 'Almohaja honra a San Bartolomé cada agosto con misas, verbenas y actividades tradicionales en la plaza del pueblo.',
+        'date' => '2025-08-24',
+        'type' => 'religious',
+        'town_id' => 208,
+        'creator_id' => 1,
+        'price' => 0.00,
+    ]);
+    DB::table('events')->insert([
+        'title' => 'Fiestas de San Bartolomé',
+        'description' => 'Aguatón se llena de vida en agosto con sus fiestas patronales en honor a San Bartolomé, con música, comida y tradición.',
+        'date' => '2025-08-24',
+        'type' => 'cultural',
+        'town_id' => 209,
+        'creator_id' => 1,
+        'price' => 0.00,
+    ]);
+    DB::table('events')->insert([
+        'title' => 'Fiestas patronales en honor a San Bartolomé',
+        'description' => 'Bádenas celebra sus fiestas en agosto con honor a San Bartolomé, manteniendo viva la tradición y el espíritu comunitario.',
+        'date' => '2025-08-24',
+        'type' => 'cultural',
+        'town_id' => 210,
+        'creator_id' => 1,
+        'price' => 0.00,
+    ]);
+    DB::table('events')->insert([
+        'title' => 'Fiestas de San Bartolomé',
+        'description' => 'La Fresneda se engalana en agosto para festejar a San Bartolomé con danzas tradicionales, juegos y procesiones.',
+        'date' => '2025-08-24',
+        'type' => 'religious',
+        'town_id' => 211,
+        'creator_id' => 1,
+        'price' => 0.00,
+    ]);
+    DB::table('events')->insert([
+        'title' => 'Fiestas de Santa María y San Julián',
+        'description' => 'Albarracín celebra en septiembre las fiestas de sus patronos con música, fuegos artificiales y actividades culturales.',
+        'date' => '2025-09-12',
+        'type' => 'party',
+        'town_id' => 212,
+        'creator_id' => 1,
+        'price' => 12.00,
+    ]);
+    DB::table('events')->insert([
+        'title' => 'Fiestas patronales de San Roque',
+        'description' => 'Valderrobres vive intensamente las fiestas de San Roque en agosto, con encierros, conciertos y actos religiosos.',
+        'date' => '2025-08-16',
+        'type' => 'party',
+        'town_id' => 213,
+        'creator_id' => 1,
+        'price' => 15.00,
+    ]);
+    DB::table('events')->insert([
+        'title' => 'Semana Cultural y Fiestas de San Antonio',
+        'description' => 'Rubielos de Mora celebra en junio su Semana Cultural y las fiestas de San Antonio con exposiciones, teatro y conciertos.',
+        'date' => '2025-06-13',
+        'type' => 'party',
+        'town_id' => 214,
+        'creator_id' => 1,
+        'price' => 10.00,
+    ]);
+    DB::table('events')->insert([
+        'title' => 'Fiesta de la Virgen de los Remedios',
+        'description' => 'Segura de los Baños rinde homenaje a la Virgen de los Remedios el 8 de septiembre con actos religiosos y encuentros populares.',
+        'date' => '2025-09-08',
+        'type' => 'party',
+        'town_id' => 215,
+        'creator_id' => 1,
+        'price' => 8.00,
+    ]);
+    DB::table('events')->insert([
+        'title' => 'Fiesta de San Sebastián',
+        'description' => 'La Puebla de Montalbán celebra cada 20 de enero la Fiesta de San Sebastián con actos religiosos, danzas populares y hogueras.',
+        'date' => '2025-01-20',
+        'type' => 'party',
+        'town_id' => 216,
+        'creator_id' => 1,
+        'price' => 5.00,
+    ]);
+    DB::table('events')->insert([
+        'title' => 'Fiesta de la Virgen del Castillo',
+        'description' => 'Tembleque honra a la Virgen del Castillo el 15 de agosto con procesiones, música tradicional y actividades culturales.',
+        'date' => '2025-08-15',
+        'type' => 'party',
+        'town_id' => 217,
+        'creator_id' => 1,
+        'price' => 10.00,
+    ]);
+    DB::table('events')->insert([
+        'title' => 'Fiesta de San Juan',
+        'description' => 'Yunclillos celebra el 24 de junio la festividad de San Juan con verbenas populares, hogueras y eventos familiares.',
+        'date' => '2025-06-24',
+        'type' => 'party',
+        'town_id' => 218,
+        'creator_id' => 1,
+        'price' => 8.00,
+    ]);
+    DB::table('events')->insert([
+        'title' => 'Fiesta de San José',
+        'description' => 'Cofrentes vive el 19 de marzo la festividad de San José con misas, mascletàs y festejos falleros.',
+        'date' => '2025-03-19',
+        'type' => 'cultural',
+        'town_id' => 219,
+        'creator_id' => 1,
+        'price' => 0.00,
+    ]);
+    DB::table('events')->insert([
+        'title' => 'Fiesta de la Virgen del Rosario',
+        'description' => 'Albuixech celebra el 7 de octubre sus fiestas patronales en honor a la Virgen del Rosario con actividades religiosas y festivas.',
+        'date' => '2025-10-07',
+        'type' => 'religious',
+        'town_id' => 220,
+        'creator_id' => 1,
+        'price' => 0.00,
+    ]);
+    DB::table('events')->insert([
+        'title' => 'Fiesta de San Sebastián',
+        'description' => 'Llocnou de la Corona honra a San Sebastián el 20 de enero con actos religiosos y celebraciones populares.',
+        'date' => '2025-01-20',
+        'type' => 'religious',
+        'town_id' => 221,
+        'creator_id' => 1,
+        'price' => 0.00,
+    ]);
+    DB::table('events')->insert([
+        'title' => 'Fiesta de la Virgen del Socorro',
+        'description' => 'Cifuentes celebra el 8 de septiembre su tradicional fiesta en honor a la Virgen del Socorro con procesiones y eventos locales.',
+        'date' => '2025-09-08',
+        'type' => 'religious',
+        'town_id' => 222,
+        'creator_id' => 1,
+        'price' => 0.00,
+    ]);
+    DB::table('events')->insert([
+        'title' => 'Fiesta de la Virgen de la Peña',
+        'description' => 'Sigüenza vive intensamente el 15 de agosto con sus fiestas en honor a la Virgen de la Peña, destacando sus tradiciones y cultura.',
+        'date' => '2025-08-15',
+        'type' => 'religious',
+        'town_id' => 223,
+        'creator_id' => 1,
+        'price' => 0.00,
+    ]);
+    DB::table('events')->insert([
+        'title' => 'Fiesta de la Virgen de la Asunción',
+        'description' => 'Alcalá del Júcar celebra el 15 de agosto su fiesta grande en honor a la Virgen de la Asunción con actividades culturales y religiosas.',
+        'date' => '2025-08-15',
+        'type' => 'religious',
+        'town_id' => 224,
+        'creator_id' => 1,
+        'price' => 0.00,
+    ]);
+    DB::table('events')->insert([
+        'title' => 'Fiesta de la Virgen del Rosario',
+        'description' => 'La Almunia de Doña Godina honra a la Virgen del Rosario el 7 de octubre con desfiles, conciertos y tradición popular.',
+        'date' => '2025-10-07',
+        'type' => 'party',
+        'town_id' => 225,
+        'creator_id' => 1,
+        'price' => 12.00,
+    ]);
+    DB::table('events')->insert([
+        'title' => 'Fiesta de la Virgen de los Remedios',
+        'description' => 'Belchite celebra el 8 de septiembre la Fiesta de la Virgen de los Remedios con procesiones, ferias y actividades tradicionales.',
+        'date' => '2025-09-08',
+        'type' => 'religious',
+        'town_id' => 226,
+        'creator_id' => 1,
+        'price' => 0.00,
+    ]);
+    
+    DB::table('events')->insert([
+        'title' => 'Fiesta de la Virgen del Pilar',
+        'description' => 'Mequinenza honra a la Virgen del Pilar el 12 de octubre con actos religiosos, música, fuegos artificiales y cultura popular aragonesa.',
+        'date' => '2025-10-12',
+        'type' => 'religious',
+        'town_id' => 227,
+        'creator_id' => 1,
+        'price' => 0.00,
+    ]);
+}
 }
