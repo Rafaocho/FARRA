@@ -36,10 +36,16 @@ section{
     width: 100%;
     background-color: var(--background)
 }
+.hover-effect:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease-in-out;
+}
 .full-width-image-container {
     position: absolute;
+       top: 0;
+      left: 0;
     width: 100%;
-    height: 270px;
+    height: 100%;
     z-index: -1;
     background-image: url('/images/pruebas/pexels-photo-801863.png');
     background-size: cover;
@@ -64,7 +70,7 @@ section{
 }
 
 main {
-    min-height: 93vh;
+    min-height: 68.8vh;
     min-width: 100%;
     display: flex;
     flex-direction: column;

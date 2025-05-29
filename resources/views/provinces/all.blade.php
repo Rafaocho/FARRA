@@ -1,6 +1,6 @@
 @extends('master')
 
-@section('main_title', '¡Estas son las provincias disponibles de ' . $community->name . '!')
+@section('main_title', __('messages.provincesTitle') . $community->name . '!')
 
 @section('content')
   @if($provincesList->isNotEmpty())
@@ -21,10 +21,10 @@
       @endforeach
     </div>
   @else
-    <p class="text-center mt-4">No hay provincias en esta comunidad.</p>
+    <p class="text-center mt-4">{{ __('messages.noProvinces') ?? 'No hay provincias en esta comunidad.' }}</p>
   @endif
 
   <div class="d-flex justify-content-center mt-4">
-    <a class="btn btn-primary" href="{{ route('communities.index') }}">← Volver a Comunidades</a>
+    <a class="btn fw-bold"  style="background-color: #f28dd0; color: white;" href="{{ route('communities.index') }}">← {{ __('messages.goBackCommunity') }}</a>
   </div>
 @endsection

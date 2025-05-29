@@ -10,7 +10,7 @@
     </form>
 @endsection
 
-@section('main_title', '¡Estas son las comunidades disponibles!')
+@section('main_title', __('messages.communitiesTitle'))
 
 
 @section('content')

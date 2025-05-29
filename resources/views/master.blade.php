@@ -38,32 +38,37 @@
     {{-- Idiomas y perfil --}}
     <div class="container h-100 position-relative d-flex justify-content-between align-items-start py-4">
       <div class="d-flex align-items-center gap-3 ms-auto">
-        <a href="{{ route('lang.switch', 'es') }}" class="text-decoration-none text-light fs-5">ES</a>
-        <a href="{{ route('lang.switch', 'en') }}" class="text-decoration-none text-light fs-5">EN</a>
+        @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+      <a rel="alternate" hreflang="{{ $localeCode }}"
+        href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}"
+        class="text-decoration-none text-light fs-5">
+        {{ strtoupper($localeCode) }}
+      </a>
+    @endforeach
         @auth
       <div class="dropdown position-relative">
         <a style="cursor: pointer;" class="d-inline-block" data-bs-toggle="dropdown" data-bs-display="static"
         aria-expanded="false">
-        <img src="{{ asset('images/user.webp') }}" alt="Usuario" class="rounded-circle"
-          style="width: 45px; height: 45px; object-fit: cover;">
+        <img src="{{ asset('images/user.webp') }}" alt="{{ __('messages.user') ?? 'Usuario' }}"
+          class="rounded-circle" style="width: 45px; height: 45px; object-fit: cover;">
         </a>
 
         <ul class="dropdown-menu mt-2 text-center" style="left: 50%; transform: translateX(-50%);">
         <li>
           <a class="dropdown-item fw-bold text-center" href="{{ route('profile.show', auth()->user()->id) }}">
-          Ver perfil
+          {{ __('messages.viewProfile') ?? 'Ver perfil' }}
           </a>
         </li>
         <li>
           <a class="dropdown-item fw-bold text-center" href="{{ route('profile.edit') }}">
-          Editar perfil
+          {{ __('messages.editProfile2') ?? 'Editar perfil' }}
           </a>
         </li>
         <li>
           <form action="{{ route('logout') }}" method="POST">
           @csrf
           <button type="submit" class="dropdown-item fw-bold text-danger text-center">
-            Cerrar sesión
+            {{ __('messages.logout') ?? 'Cerrar sesión' }}
           </button>
           </form>
         </li>
@@ -73,18 +78,16 @@
       </div>
     </div>
 
-    {{-- Logo centrado --}}
     <div class="position-absolute start-50 translate-middle-x text-center" style="bottom: 35%;">
       <a href="{{ route('index') }}">
         <img src="{{ asset('images/logo.png') }}" alt="Logo" width="250" height="250">
       </a>
     </div>
 
-    {{-- Bienvenida + buscador opcional --}}
     <div class="position-absolute bottom-0 start-50 translate-middle-x text-center mb-4">
       <h2 class="display-4 fw-bold">{{ __('messages.welcomeEvents') }}</h2>
       <p class="lead">{{ __('messages.subEvent') }}</p>
-      @yield('header') {{-- Solo se renderiza si la vista lo define --}}
+      @yield('header')
     </div>
   </header>
 

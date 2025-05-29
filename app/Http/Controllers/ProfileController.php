@@ -19,7 +19,16 @@ class ProfileController extends Controller
         $isFollowing = auth()->user()->following()->where('followed_id', $user->id)->exists();
         $favoriteTowns = $user->favoriteTowns;
 
-        return view('profile.show', compact('user', 'followersCount', 'followingCount', 'isFollowing', 'favoriteTowns'));
+        $joinedEvents = $user->events()->with('town')->get();
+
+        return view('profile.show', compact(
+            'user',
+            'followersCount',
+            'followingCount',
+            'isFollowing',
+            'favoriteTowns',
+            'joinedEvents'
+        ));
     }
     /**
      * Display the user's profile form.

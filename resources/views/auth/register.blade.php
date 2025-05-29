@@ -6,7 +6,7 @@
             border: 1px solid black;
             max-width: 1000px;
             margin: 30px auto;
-            height: 90vh;
+            height: 100vh;
             box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             overflow: hidden;
@@ -142,7 +142,6 @@
     </style>
 
     <div class="register-wrapper">
-        <!-- Lado izquierdo -->
         <div class="left-side">
             <h1 >¡Bienvenido a Farra!</h1>
             <p>Farra es la app donde las fiestas de pueblo cobran vida. Descubre fiestas, gastronomia, culturas y todo
@@ -152,36 +151,29 @@
             <p>Registrate para explorar, guardar eventos y recibir notificaciones personalizadas. ¡No te pierdas la
                 próxima farra!</p>
         </div>
-
-        <!-- Lado derecho -->
         <div class="right-side">
             <img src="{{ asset('images/Farra.png') }}" alt="FARRA Logo" >
 
             <form method="POST" action="{{ route('register') }}" class="register-form">
                 @csrf
-
-                <!-- Nombre -->
                 <div>
                     <x-input-label for="name" :value="__('Nombre de usuario:')" />
                     <x-text-input id="name" class="block w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
                     <x-input-error :messages="$errors->get('name')" class="mt-2" />
                 </div>
-
-                <!-- Email -->
+                
                 <div>
                     <x-input-label for="email" :value="__('Correo electrónico')" />
                     <x-text-input id="email" class="block w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
                     <x-input-error :messages="$errors->get('email')" class="mt-2" />
                 </div>
 
-                <!-- Edad -->
                 <div>
                     <x-input-label for="age" :value="__('Edad')" />
                     <x-text-input id="age" class="block w-full" type="number" name="age" :value="old('age')" required />
                     <x-input-error :messages="$errors->get('age')" class="mt-2" />
                 </div>
 
-                <!-- Rol -->
                 <div>
                     <x-input-label for="role" :value="__('Tipo de usuario')" />
                     <select name="role" id="role">
@@ -190,28 +182,24 @@
                     </select>
                 </div>
 
-                <!-- Contraseña -->
                 <div>
                     <x-input-label for="password" :value="__('Contraseña')" class="mt-4" />
                     <x-text-input id="password" class="block w-full" type="password" name="password" required autocomplete="new-password" />
                     <x-input-error :messages="$errors->get('password')" class="mt-2" />
                 </div>
 
-                <!-- Confirmar contraseña -->
                 <div>
                     <x-input-label for="password_confirmation" :value="__('Confirmar Contraseña')" />
                     <x-text-input id="password_confirmation" class="block w-full" type="password" name="password_confirmation" required autocomplete="new-password" />
                     <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
                 </div>
 
-                <!-- Botón -->
                 <div style="margin-top: 16px;">
                     <x-primary-button class="w-full">
                         {{ __('REGISTRARSE') }}
                     </x-primary-button>
                 </div>
 
-                <!-- Enlace a login -->
                 <div style="margin-top: 16px; text-align: center;">
                     ¿Ya tienes cuenta? <a href="{{ route('login') }}">Inicia sesión aquí</a>
                 </div>

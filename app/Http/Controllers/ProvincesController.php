@@ -57,7 +57,6 @@ class ProvincesController extends Controller
         $townIds = $province->towns->pluck('id');
         $eventsRaw = Event::whereIn('town_id', $townIds)->with('town')->get();
 
-        // Mapear los eventos para agregar nombre del pueblo y la fecha en formato ISO
         $events = $eventsRaw->map(function ($event) {
             return [
                 'title' => $event->title,

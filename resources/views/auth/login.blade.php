@@ -165,7 +165,6 @@
     </style>
 
     <div class="login-wrapper">
-        <!-- Lado izquierdo -->
         <div class="left-side">
             <h1>¡Bienvenido de nuevo a Farra!</h1>
             <p>Farra es la app donde las fiestas de pueblo cobran vida. Descubre fiestas, gastronomia, culturas y todo
@@ -176,17 +175,14 @@
                 próxima farra!</p>
         </div>
 
-        <!-- Lado derecho -->
         <div class="right-side">
             <img src="{{ asset('images/Farra.png') }}" alt="FARRA Logo">
 
-            <!-- Session Status -->
             <x-auth-session-status class="mb-4" :status="session('status')" />
 
             <form method="POST" action="{{ route('login') }}" class="login-form">
                 @csrf
 
-                <!-- Email -->
                 <div class="mb-4">
                     <x-input-label for="email" :value="__('Correo electrónico')" />
                     <x-text-input id="email" type="email" name="email" :value="old('email')" required autofocus
@@ -194,7 +190,6 @@
                     <x-input-error :messages="$errors->get('email')" class="mt-2" />
                 </div>
 
-                <!-- Password -->
                 <div class="mb-4">
                     <x-input-label for="password" :value="__('Contraseña')" />
                     <x-text-input id="password" type="password" name="password" required
@@ -202,7 +197,6 @@
                     <x-input-error :messages="$errors->get('password')" class="mt-2" />
                 </div>
 
-                <!-- Remember Me + Forgot -->
                 <div class="remember-row">
                     <label>
                         <input type="checkbox" name="remember"> Recordárme
@@ -210,12 +204,10 @@
                     <a href="{{ route('password.request') }}">¿Has olvidado tu contraseña?</a>
                 </div>
 
-                <!-- Submit -->
                 <x-primary-button class="w-full text-center">
                     {{ __('Entrar') }}
                 </x-primary-button>
-
-                <!-- Register -->
+                
                 <div class="register-text">
                     ¿No tienes cuenta? <a href="{{ route('register') }}">Regístrate aquí</a>
                 </div>
