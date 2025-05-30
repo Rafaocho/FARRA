@@ -1,7 +1,7 @@
 @extends('master')
-
+<!--Vsita donde se muestran todas las comunidades-->
 @section('header')
-  {{-- Buscador solo en esta vista --}}
+<!--Aquí nos encontramos el buscador para filtrar por letras-->
   <form action="{{ route('communities.search') }}" method="GET" class="input-group mt-3 justify-content-center" style="max-width: 500px; margin: 0 auto;">
     <input type="text" name="data" class="form-control" placeholder="{{ __('messages.placeholderCommunities') }}" aria-label="{{ __('messages.placeholderCommunities') }}">
     <button type="submit" class="btn fw-bold text-black" style="background-color: #f28dd0; color: white;">

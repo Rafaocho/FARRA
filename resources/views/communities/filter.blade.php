@@ -1,7 +1,7 @@
 @extends('master')
 
 @section('header')
-    {{-- Buscador solo en esta vista --}}
+<!--En esta vista se muestran los elementos filtrados en la vista all-->
     <form action="{{ route('communities.search') }}" method="GET" class="input-group mt-3 justify-content-center"
         style="max-width: 500px; margin: 0 auto;">
         <input type="text" name="data" class="form-control" placeholder="Encuentra tu comunidad"

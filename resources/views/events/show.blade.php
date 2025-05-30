@@ -1,5 +1,5 @@
 @extends('master')
-
+<!--Vista con los detalles del evento, edicion, borrado y añadido de comentarios en los eventos, ademas de la posibilidad de sefuir al que comente-->
 @section('content')
     <div class="container col-9 card shadow-lg p-5">
         <div class="position-relative">

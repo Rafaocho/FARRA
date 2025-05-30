@@ -1,5 +1,5 @@
 @extends("master")
-
+<!--Vista para añadir pueblos o modificarlos (al final no se ha añadido esta opcion, pero sigue contemplada en la vista)-->
 @section("content")
     <div class="container mt-4">
         <div class="card shadow p-4 rounded-4">

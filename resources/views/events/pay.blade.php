@@ -1,5 +1,5 @@
 @extends('master')
-
+<!--Vista con terminal de pago y validaciones en los inputs por javascript-->
 @section('content')
 <div class="container col-7 mt-5 card shadow-lg p-5">
     <h2 class="text-center mb-4" style="color: rgb(11, 64, 161);">

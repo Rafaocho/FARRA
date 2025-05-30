@@ -1,8 +1,9 @@
 @extends('master')
-
+<!--Vista que muestra todos los eventos del pueblo-->
 @section('header')
     <div class="container">
         @if(Auth::check() && Auth::user()->role === 'creator')
+<!--Boton de añadir eventos-->
             <a href="{{ route('events.create', ['town_id' => $town->id]) }}" class="btn fw-bold" style="background-color: #f28dd0; color: white;">
                 {{ __('messages.addEvent') }}
             </a>
@@ -11,6 +12,7 @@
 @endsection
 
 @section('content')
+<!--Se muestra un mapa de la ubicacion del pueblo-->
 <div class="container py-2">
     <div class="row gy-4">
         <div class="col-md-4">

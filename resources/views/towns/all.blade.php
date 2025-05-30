@@ -1,7 +1,8 @@
 @extends('master')
-
+<!--En esta vista vemos todos los pueblos de la provincia en la qque nos encontremos-->
 @section('header')
     <div class="container">
+<!--Boton para añadir pueblos-->
         @if(Auth::check() && Auth::user()->role === 'creator')
             <a href="{{ route('towns.create', ['province_id' => $province->id]) }}" class="btn fw-bold" style="background-color: #f28dd0; color: white;">
                 {{ __('messages.addTown') ?? 'Añadir pueblo' }}
@@ -18,6 +19,7 @@
                     <div class="card-header text-center text-white" style="background-color: rgb(11, 64, 161)">
                         <h4 class="mb-0">{{ __('messages.calendarTitle') }}</h4>
                     </div>
+<!--Calendario con las fechas de los pueblos de la provincia-->
                     <div class="card-body">
                         <div id="calendar"></div>
                     </div>
@@ -40,6 +42,7 @@
                                                 {{ $town->name }}
                                             </a>
                                             @if(Auth::check())
+<!--Posibilidad de agregar pueblos a favoritos-->
                                                 <form method="POST" action="{{ route('towns.toggleFavorite', $town->id) }}">
                                                     @csrf
                                                     <button type="submit" class="btn btn-link p-0 border-0"
@@ -58,7 +61,7 @@
             </div>
         </div>
     </div>
-
+<!--Scripts para traer los eventos y para que funcione el calendario-->
     <script>
         var events = @json($eventsJson);
     </script>

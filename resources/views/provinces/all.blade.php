@@ -1,5 +1,5 @@
 @extends('master')
-
+<!--En esta vista podemos ver todas las provincias-->
 @section('main_title', __('messages.provincesTitle') . $community->name . '!')
 
 @section('content')

@@ -1,5 +1,5 @@
 @extends("master")
-
+<!--Vista para creacion y edicion de eventos-->
 @section("content")
     <div class="container mt-4">
         <div class="card shadow p-4 rounded-4">
