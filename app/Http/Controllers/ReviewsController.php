@@ -62,12 +62,4 @@ class ReviewsController extends Controller
         $p->delete();
         return redirect()->route('reviews.index')->with('success', 'Review eliminada');
     }
-
-    public function buscar(Request $r)
-    {
-        $dato = $r->input('dato');
-        $criterio = $r->input('criterio');
-        $reviews = Review::where($criterio, 'like', "%$dato%")->get();
-        return view('reviews.filter', ['reviews' => $reviews]);
-    }
 }
